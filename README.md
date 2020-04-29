@@ -9,6 +9,8 @@ truffle compile
 
 truffle migrate
 
+Make sure ports are configured properly in truffle-config.js and in the Ganache consoles respectively
+
 Create objects instance and accounts
 let instance = await Auction.deployed() 
 
