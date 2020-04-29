@@ -9,8 +9,9 @@ truffle compile
 
 truffle migrate
 
-> let instance = await Auction.deployed() 
+Create objects instance and accounts
+let instance = await Auction.deployed() 
 
-> let accounts = await web3.eth.getAccounts()
+let accounts = await web3.eth.getAccounts()
 
-you can call the bid functionalities in the smart contract solidity code 
+you can call the bid functionalities in the smart contract solidity code (for eg: instance.bid({from: accounts[2],value: web3.utils.toWei('3','ether')} )
